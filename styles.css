@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 100vh;
+    gap: 2em;
+
+}
+
+.container {
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 940px;
+    height: 940px;
+    
+}
+
+.container > div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: whitesmoke;
+    border: 1px black;
+    flex: 1 1 auto;
+    max-height: var(--max-height);
+    min-width: var(--min-width);
+   
+   
+
+    
+}
+
+.header > button {
+    display: flex;
+    background-color: #FEC868;
+   
+}
+
+.header {
+    display: flex;
+   
+}
+
+:root {
+    --max-height: 9.4px;
+    --min-width: 9.4px;
+}
