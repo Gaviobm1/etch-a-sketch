@@ -6,6 +6,7 @@ body {
     box-sizing: border-box;
     height: 100vh;
     gap: 2em;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
 
@@ -13,21 +14,22 @@ body {
     
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    width: 940px;
-    height: 940px;
+    width: 400px;
+    height: 400px;
+    border: 2px solid black;
     
+  
 }
 
 .container > div {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    background-color: whitesmoke;
-    border: 1px black;
-    flex: 1 1 auto;
-    max-height: var(--max-height);
-    min-width: var(--min-width);
+    background-color: white;
+    height: var(--max-height);
+    width: var(--min-width);
+    border: 0.1px solid;
+    box-sizing: border-box;
+    border-color: hsl(240, 2%, 90%);
+   
+    
    
    
 
@@ -35,17 +37,19 @@ body {
 }
 
 .header > button {
-    display: flex;
     background-color: #FEC868;
+    box-shadow: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 150px;
+    font-size: xx-large;
    
 }
 
-.header {
-    display: flex;
-   
-}
 
 :root {
     --max-height: 9.4px;
     --min-width: 9.4px;
+    --min-height: 9.4px;
+    --max-width: 9.4px;
 }

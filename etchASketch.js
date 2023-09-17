@@ -8,14 +8,14 @@ topButton.addEventListener('click', () => {
     let userInput = prompt('How long do you want the sides to be?');
     if (+userInput > 100) { alert("Please enter number 100 or under"); return userInput};
     let num = +userInput * +userInput; 
-    let sides = 940 / userInput;
+    let hold = 400 / userInput;
     deletePad ();
     createDivs(num);
     Array.from(document.getElementsByClassName('boxy'))
-    .forEach(function (box) {box.style.setProperty ('--max-height', `${sides}px`) });
+    .forEach(function (box) {box.style.setProperty ('--max-height', `${hold}px`) });
     Array.from(document.getElementsByClassName('boxy'));
     Array.from(document.getElementsByClassName('boxy'))
-    .forEach(function (box) {box.style.setProperty ('--min-width', `${sides}px`) });
+    .forEach(function (box) {box.style.setProperty ('--min-width', `${hold}px`) });
     Array.from(document.getElementsByClassName('boxy'))
 .forEach(function (box) {  box.addEventListener('mouseover', () => box.style.backgroundColor = `#${randomColor()}`)});
 });
