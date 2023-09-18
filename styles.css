@@ -6,28 +6,39 @@ body {
     box-sizing: border-box;
     height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(202, 186, 186, 0.1);
 }
 
-
+.buttCont {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
 
 .sketchbox {
     display: flex;
     flex-wrap: wrap;
     width: 500px;
     height: 500px;
-    border: 2px solid black;
+    box-shadow: 2px 2px 2px 2px rgb(118, 113, 113);
+    background-color: white;
 }
 
 .boxy {
     background-color: black;
     height: var(--max-height);
     width: var(--min-width);
-    border: 1px solid gray;
     box-sizing: border-box;
-    border-color: grey;
     opacity: 0.0;
-    padding: 0;
-    margin: 0;
+    
+}
+
+.rainy {
+    background-color: white;
+    height: var(--max-height);
+    width: var(--min-width);
+    box-sizing: border-box;
+
 }
 
 header {
