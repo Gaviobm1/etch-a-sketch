@@ -29,6 +29,7 @@ body {
     box-sizing: border-box;
     border-color: hsl(240, 2%, 90%);
    
+   
     
    
    
@@ -51,5 +52,4 @@ body {
     --max-height: 9.4px;
     --min-width: 9.4px;
     --min-height: 9.4px;
-    --max-width: 9.4px;
 }

@@ -13,12 +13,14 @@ topButton.addEventListener('click', () => {
     createDivs(num);
     Array.from(document.getElementsByClassName('boxy'))
     .forEach(function (box) {box.style.setProperty ('--max-height', `${hold}px`) });
-    Array.from(document.getElementsByClassName('boxy'));
     Array.from(document.getElementsByClassName('boxy'))
     .forEach(function (box) {box.style.setProperty ('--min-width', `${hold}px`) });
     Array.from(document.getElementsByClassName('boxy'))
-.forEach(function (box) {  box.addEventListener('mouseover', () => box.style.backgroundColor = `#${randomColor()}`)});
+.forEach(function (box) {  box.addEventListener('mouseover', () => {
+    box.style.backgroundColor = `#${randomColor()}`;
+})});
 });
+
 
 
 
